@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Search Engine Methods</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Search Engine</h1>
+
+        <div class="row" style="margin-top: 130px;">
+
+            <div class="col-md-3">
+                <div class="card" style="min-height: 190px;" data-route="/search-engine-main/for-given-promt">
+                    <div class="card-body">
+                        <h5 class="card-title">For Given Prompt</h5>
+                        <p class="card-text">This search method uses searching through entire pdf to answer the given promt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="min-height: 190px;" data-route="/search-engine-main/for-analyzing-each-contract">
+                    <div class="card-body">
+                        <h5 class="card-title">Individual Analysis of contract</h5>
+                        <p class="card-text">Here in the method we can get the analysis of any of individual contract.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="min-height: 190px;" data-route="/search-engine-main/using-chromadb">
+                    <div class="card-body">
+                        <h5 class="card-title">Chroma DB for fast retrival</h5>
+                        <p class="card-text">In this method we give prompt and search based on similarity from chroma DB.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="min-height: 190px;" data-route="/search-engine-main/risk-analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Risk Analysis on Clauses</h5>
+                        <p class="card-text">Here we can analyze risk on any particular clause to determine future changes required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/search-engine-main.js"></script>
+</body>
+
+</html>

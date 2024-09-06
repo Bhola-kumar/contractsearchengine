@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Feeding</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            height: 520px;
+            /* overflow-y: auto; */
+            background-color: #f8f9fa;
+            /* padding: 1rem; */
+        }
+        .sidebar h5 {
+            margin-top: 12px;
+            background-color: rgb(149, 227, 201);
+            padding: 4px;
+            border-radius: 10px;
+        }
+        .card-container {
+            max-height: 450px;
+            overflow-y: auto;
+        }
+
+        .tag-container {
+            height: 148px;
+            padding: 1rem;
+            background-color: #e9ecef;
+            border-radius: 0.25rem;
+            overflow-x: hidden;
+            white-space: normal;
+            margin-top: 12px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #9ecfe3ee;
+            color: rgb(7, 7, 7);
+            padding: 0.4rem;
+            margin: 0.2rem;
+            border-radius: 0.25rem;
+        }
+        
+
+        .db-visualization {
+            height: 320px;
+            background-color: #f1f3f5;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            overflow-y: auto;
+        }
+        .rightbar{
+            height: 520px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-md-3 sidebar">
+                <h5 class="text-center">Contract Summary </h5>
+                <div class="card-container" id="cardContainer">
+                    <!-- Dynamic cards will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-md-9 rightbar">
+                <!-- Tags Section -->
+                <div class="tag-container mb-4" id="tagContainer">
+                    <!-- Dynamic tags will appear here -->
+                </div>
+
+                <!-- Database Visualization Section -->
+                <div class="db-visualization" id="dbVisualization">
+                    <!-- ChromaDB visualization will appear here -->
+                </div>
+                
+            </div>
+            <img src="../static/images/arch.png" alt="Architecture" style="width: 1200px; height: 400px;"></img>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../static/js/database-feeding.js"></script>
+</body>
+
+</html>
